@@ -202,6 +202,13 @@ public class pnLogin extends javax.swing.JFrame {
 
     private void kButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton2ActionPerformed
         JOptionPane.showConfirmDialog(this, "Login successes!", "Confirmation", JOptionPane.OK_OPTION, JOptionPane.QUESTION_MESSAGE);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new pnTrangChu().setVisible(true);
+                setVisible(false);
+                
+            }
+        });
     }//GEN-LAST:event_kButton2ActionPerformed
 
     /**
